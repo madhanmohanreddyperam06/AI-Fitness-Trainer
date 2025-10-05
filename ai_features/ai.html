@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Fitness Trainer</title>
+  <link rel="stylesheet" href="ai-style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+</head>
+<body>
+  <h1>AI Fitness Trainer</h1>
+  <video id="webcam" autoplay playsinline width="640" height="480"></video>
+  <canvas id="pose-canvas" width="640" height="480"></canvas>
+
+  <div class="controls">
+    <button onclick="startListening()">🎤 Voice Command</button>
+    <input type="text" id="chat-input" placeholder="Type your workout query..." onkeydown="if(event.key==='Enter')chat()">
+    <button onclick="chat()">💬 Ask</button>
+    <div id="response"></div>
+  </div>
+
+  <script type="module" src="pose.js"></script>
+  <script src="voice.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>

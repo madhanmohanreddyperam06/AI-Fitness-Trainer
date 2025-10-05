@@ -19,9 +19,9 @@
 }
 
 body {
-    width: 100%;
+    width: 90%;
     min-height: 100vh;
-    background-image: url("bg.jpg");
+    background-image: url("bgg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@ a {
 .bgtext {
     font-size: clamp(2rem, 8vw, 11rem);
     text-align: center;
-    color: rgba(204, 206, 206, 0.797);
+    color: rgba(204, 206, 206, 0.621);
     margin: var(--spacing-lg) auto;
     padding: 0 var(--spacing-md);
     word-wrap: break-word;
@@ -388,7 +388,7 @@ main {
     }
 
     .virtual-assistant img {
-        width: 80px;
+        width: 100px;
     }
 
     .svgs {
@@ -398,7 +398,7 @@ main {
 
     .user-chat-box,
     .ai-chat-box {
-        width: 90%;
+        width: 100%;
     }
 
     .select-box {
